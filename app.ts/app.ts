@@ -16,7 +16,7 @@
     nombre : string;
     artesMarciales : string[];
   }
-  var batman = {
+const batman: Superheroe = {
     nombre: 'Bruno Díaz',
     artesMarciales: ['Karate','Aikido','Wing Chun','Jiu-Jitsu']
   }
@@ -43,7 +43,7 @@
 
   const getAvenger = ( nombre: string, poder?: string, arma: string = 'arco' ) => {
     
-    var mensaje;
+    let mensaje;
     
     if( poder ){
       mensaje = `${nombre} tiene el poder de: ${poder} y un arma: ${arma}`;
@@ -62,8 +62,7 @@
   class Rectangulo{
 
     constructor(public base:number, public altura:number){
-      this.base = base;
-      this.altura = altura;
+      
     }
 
     area = ( ) : number => {
